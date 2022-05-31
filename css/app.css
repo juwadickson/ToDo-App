@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(229, 232, 235);
+}
+
+form .response {
+  position: absolute;
+  top: 1%;
+  left: 40%;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  background-color: rgb(229, 232, 235);
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.712),
+    5px 5px 5px rgba(109, 109, 109, 0.199);
+  transition: all 2s ease-in-out;
+  animation: fadein 0.2s 1 ease-in;
+}
+form #error {
+  color: red;
+  opacity: 0.8;
+}
+@keyframes fadein {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 1%;
+  }
+}
